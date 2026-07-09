@@ -16,7 +16,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             set -e
-            cd ~/AWS-Application
+            cd ~/aws-application
             git pull origin main
             npm ci
             npm run build
