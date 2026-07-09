@@ -21,4 +21,4 @@ jobs:
             npm ci
             npm run build
             npm run migrate
-            pm2 restart aws-app --update-env
+            pm2 restart aws-application --update-env
