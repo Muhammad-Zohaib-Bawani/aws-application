@@ -71,8 +71,10 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h1>Profiles 🚀 v2</h1>
-      <h1>made by zaib</h1>
+      <header className="hero">
+        <h1>Profiles</h1>
+        <p>Add people with a name, email, bio and photo</p>
+      </header>
 
       <form className="card" onSubmit={submit}>
         <label htmlFor="name">Name *</label>
@@ -103,6 +105,11 @@ export default function Home() {
           {busy ? 'Saving…' : 'Add profile'}
         </button>
       </form>
+
+      <div className="list-head">
+        <h2>People</h2>
+        <span className="count">{profiles.length}</span>
+      </div>
 
       {profiles.length === 0 && <p className="muted">No profiles yet.</p>}
       {profiles.map((p) => (
