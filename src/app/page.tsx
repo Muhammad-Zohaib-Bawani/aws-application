@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h1>Profiles</h1>
+      <h1>Profiles 🚀 v2</h1>
 
       <form className="card" onSubmit={submit}>
         <label htmlFor="name">Name *</label>
